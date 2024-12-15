@@ -1,0 +1,159 @@
+.hero {
+  padding-top: 65px;
+  background-color: black;
+  color: white;
+
+  .hero-cnt {
+    padding: 4em 0 4em 0;
+    max-width: 950px;
+    margin: auto;
+
+    h1 {
+      font-size: 4em;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 1.5em;
+      text-align: center;
+      // font-weight: bold;
+      font-size: 16px;
+      word-spacing: 2px;
+    }
+
+    .app-dwn-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      margin-top: 2em;
+
+      a {
+        width: 170px;
+        height: 65px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .pseudo-boxes {
+      max-width: 60%;
+      margin: 0 auto;
+      margin-top: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+
+      div {
+        width: 200px;
+        height: 120px;
+        border-radius: 5px;
+        animation: skeleton 1s linear infinite alternate;
+
+        &:nth-child(2) {
+          animation: redSkeleton 1.5s linear infinite alternate;
+        }
+        &:nth-child(3) {
+          animation: blueSkeleton 1.5s linear infinite alternate;
+        }
+      }
+    }
+  }
+}
+
+@keyframes skeleton {
+  from {
+    background-color: rgb(221, 221, 221);
+  }
+  to {
+    background-color: rgb(167, 167, 167);
+  }
+}
+
+@keyframes redSkeleton {
+  from {
+    background-color: rgb(208, 104, 104);
+  }
+  to {
+    background-color: rgb(167, 167, 167);
+  }
+}
+
+@keyframes blueSkeleton {
+  from {
+    background-color: rgb(14, 74, 240);
+  }
+  to {
+    background-color: rgb(167, 167, 167);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-top: 65px;
+
+    .hero-cnt {
+      padding: 0 0 3em 0;
+      max-width: 90vw;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 17px;
+      }
+
+      .app-dwn-section {
+        a {
+          width: 170px;
+          height: 60px;
+          overflow: hidden;
+        }
+      }
+
+      .pseudo-boxes {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 2em;
+        gap: 1em;
+
+        div {
+          width: 40%;
+          height: 90px;
+          border-radius: 5px;
+
+          &:nth-child(3) {
+            display: none;
+          }
+          &:nth-child(4) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    .hero-cnt {
+      padding: 3em 0 4em 0;
+      max-width: 85%;
+      margin: auto;
+
+      h1 {
+        font-size: 3em;
+        font-weight: 900;
+        text-align: center;
+      }
+    }
+  }
+}

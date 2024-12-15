@@ -1,0 +1,42 @@
+.accordion {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .acc-cnt {
+    background-color: black;
+    color: white;
+
+    .icon {
+      fill: white;
+    }
+
+    #panel1-header {
+      height: 60px;
+      border-radius: 10px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .acc-dets {
+      height: fit-content;
+      padding: 2em 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .accordion {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .acc-cnt {
+      #panel1-header {
+        font-size: 15px;
+      }
+    }
+  }
+}

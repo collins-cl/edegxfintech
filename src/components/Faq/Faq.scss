@@ -1,0 +1,88 @@
+.faq {
+  background-color: #fcecc94f;
+  padding-top: 15em;
+  padding-bottom: 10em;
+
+  .f-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .f-title {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .f-intro {
+      margin-top: 1em;
+      font-size: 2em;
+    }
+
+    .f-info {
+      max-width: 35%;
+      margin: auto;
+      text-align: center;
+      margin-top: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq {
+    padding-top: 17em;
+    padding-bottom: 5em;
+
+    .f-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 95%;
+      margin: auto;
+
+      .f-title {
+        font-size: 20px;
+      }
+
+      .f-intro {
+        margin-top: 10px;
+        font-size: 1.7em;
+        text-align: center;
+      }
+
+      .f-info {
+        max-width: 95%;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .faq {
+    padding-top: 6em;
+    padding-bottom: 7em;
+
+    .f-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 90%;
+      margin: auto;
+
+      .f-intro {
+        margin-top: 10px;
+      }
+
+      .f-info {
+        max-width: 40%;
+        margin-top: 10px;
+      }
+    }
+  }
+}
